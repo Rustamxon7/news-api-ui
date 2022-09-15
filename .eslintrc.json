@@ -30,7 +30,9 @@
     "indent": "off",
     "react/jsx-indent": "off",
     "no-underscore-dangle": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "arrow-body-style": "off",
+    "react/no-array-index-key": "off"
   },
   "ignorePatterns": ["dist/", "build/"]
 }

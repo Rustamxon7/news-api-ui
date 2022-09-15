@@ -18,10 +18,6 @@ const Posts = () => {
 
   const sources = useSelector((state) => state.sources);
 
-  useEffect(() => {
-    fetchPosts();
-  }, [sources]);
-
   const fetchPosts = async () => {
     setLoading(true);
 
@@ -30,6 +26,10 @@ const Posts = () => {
 
     setLoading(false);
   };
+
+  useEffect(() => {
+    fetchPosts();
+  }, [sources]);
 
   const fetchNewsBySource = async (e) => {
     const res = await sourcesApi.getNewsBySource(e);
