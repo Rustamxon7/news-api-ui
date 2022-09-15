@@ -6,13 +6,14 @@ import { NavButton, Button } from '../components/UI/Button';
 test('renders button', () => {
   render(
     <NavButton
-      children="test"
       className="test"
       link="test"
       active="test"
       onClick={() => {}}
       onMouseDown={() => {}}
-    />
+    >
+      test
+    </NavButton>
   );
   const button = screen.getByText(/test/i);
   expect(button).toBeInTheDocument();
@@ -23,11 +24,12 @@ test('renders button', () => {
 test('renders button', () => {
   render(
     <Button
-      children="test"
       className="test"
       onClick={() => {}}
       onMouseDown={() => {}}
-    />
+    >
+      test
+    </Button>
   );
   const button = screen.getByText(/test/i);
   expect(button).toBeInTheDocument();

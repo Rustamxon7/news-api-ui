@@ -1,4 +1,5 @@
 import sourcesApi from '../api/sources';
+
 jest.useRealTimers();
 
 test('getSources', async () => {

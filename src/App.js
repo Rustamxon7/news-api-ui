@@ -6,7 +6,6 @@ import './App.scss';
 
 const Nav = React.lazy(() => import('./components/Nav/Nav'));
 const Posts = React.lazy(() => import('./components/Posts/Posts'));
-const Weather = React.lazy(() => import('./components/Weather/Weather'));
 
 function App() {
   const loading = useSelector((state) => state.sources.loading);
@@ -21,7 +20,6 @@ function App() {
       ) : (
         <div className="container">
           <Posts />
-          {/* <Weather /> */}
         </div>
       )}
     </div>

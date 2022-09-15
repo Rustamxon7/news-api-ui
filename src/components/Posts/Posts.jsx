@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import sourcesApi from '../../api/sources';
-import { links } from './Links';
+import { links } from '../utils/Links';
 
 import { MemoPost } from './Post';
 import { MemoNavButton } from '../UI/Button';
