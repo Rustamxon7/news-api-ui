@@ -1,0 +1,51 @@
+.post {
+  display: flex;
+  padding: 1.6rem;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.03);
+  gap: 2rem;
+  transition: box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #072D4B;
+  }
+
+  &__description {
+    display: block;
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  &__img {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  &__date,
+  &__src {
+    display: inline-block;
+    padding: 4px;
+    font-size: 1.2rem;
+  }
+
+  &__src {
+    background-color: rgba(7, 45, 75, 0.1);
+    border-radius: 2px;
+    text-decoration: none;
+    color: #3c4e5c;
+  }
+}
