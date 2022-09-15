@@ -25,6 +25,14 @@ git clone https://github.com/Rustamxon7/News-Api-UI.git
 
 cd News-Api-UI
 
+### Prerequisites
+
+  - Node.js
+  - NPM
+  - React 18.2.0
+  - Redux 4.2.0
+  - React testing library 13.5.0
+
 ### Setup
 Install npm packages
 ```
